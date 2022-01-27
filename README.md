@@ -1,4 +1,5 @@
-![logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnpSJ_xNSGVepSH2Hs8e0nQiQbDndb-ObZng&usqp=CAU "DigiLocker") 
+![](https://img1.digitallocker.gov.in/assets/img/digiLocker-Medium.png "DigiLocker")
+---
 # Overview 
 DigiLocker is flagship initiative of Ministry of Electronics & IT () under Digital India Programme.
 DigiLocker aims to digitally empower the citizens of India by providing  access to authentic digital documents to citizen's digital document wallet.
