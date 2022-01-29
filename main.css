@@ -7,14 +7,15 @@ body {
 
 #nav {
   background-color: darkorchid;
-  height: 4em;
   position: sticky;
   position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
   top: 0;
-  padding: 1em;
+  width: 100%;
+  padding: 8px;
+  z-index: 100;
 }
 
 div {

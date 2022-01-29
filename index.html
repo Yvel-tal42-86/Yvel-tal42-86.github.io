@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>DigiLocker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Rahul Murali" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <!--<script src="main.js"></script>-->
+    <title>DigiLocker</title>
+    <script>
+      let a;
+      let date;
+      let time;
+      setInterval(() => {
+        a = new Date();
+        let date = a.toLocaleDateString();
+        let time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+        document.getElementById("time").innerHTML =
+          "Date : " + date + "  Time :" + time;
+      }, 1000);
+    </script>
   </head>
   <body>
     <header id="nav">
       <img
         alt="Digilocker"
         src="https://img1.digitallocker.gov.in/assets/img/digiLocker-Medium.png"
+        height="120"
+        style="margin: 0; mix-blend-mode: screen"
       />
+      <span id="time" style="display: inline-flex;"></span>
     </header>
     <div id="Table_of_contents">
       <h1>Table of contents</h1>
