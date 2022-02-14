@@ -10,12 +10,8 @@
     <meta name="robots" content="nofollow" />
     <meta http-equiv="author" content="Rahul Murali" />
     <meta http-equiv="pragma" content="no-cache" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <!--<script src="main.js"></script>-->
     <title>DigiLocker</title>
     <script>
@@ -32,6 +28,27 @@
     </script>
   </head>
   <body>
+    <script> // JS file
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+</script>
+
     <nav id="nav">
       <img
         alt="Digilocker"
@@ -110,6 +127,7 @@
               alt="Get Started to DigiLocker"
               height="450"
               width="250"
+              class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
             />
           </figure>
         </p>
@@ -121,7 +139,7 @@
           <span class="button">Create account</span> option right below the
           <span class="button">Sign-in</span> button to do so.
           <figure>
-            <img src="DigiLocker\sign_in.png" height="150" width="300" />
+            <img src="DigiLocker\sign_in.png" height="150" width="300" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
           </figure>
         </p>
       </div>
@@ -142,12 +160,12 @@
           <li>E-mail ID</li>
           <li>Aadhar Number</li>
         </ul>
-        <!--indent required for note
-      < The Details filled should be strictly according to aadhar Details .
-      Assign a safe 6-Digit Security PIN and note it down somewhere for future convenience.
-      -->
+        <span class="note">
+           < The Details filled should be strictly according to aadhar Details .
+           Assign a safe 6-Digit Security PIN and note it down somewhere for future convenience.
+       </span>
         <figure>
-          <img src="DigiLocker\account_creation.png" height="400" width="250" />
+          <img src="DigiLocker\account_creation.png" height="400" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
         </figure>
         After Submission of the form you will be further required to input a
         6-Digit long OTP sent to your Aadhar Linked Mobile Number. In case you
@@ -156,7 +174,7 @@
         <span class="button">Update mobile number</span> option to change the
         currently displayed number to updated number.
         <figure>
-          <img src="DigiLocker\otp_entry.png" height="275" width="250" />
+          <img src="DigiLocker\otp_entry.png" height="275" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
         </figure>
         <p>
           After OTP Verification ,the system will prompt you to input a
@@ -173,26 +191,25 @@
     </div>
     <!--
     4.
-    
     6.
-    <figure><img src="DigiLocker\Help2.png" height="400" width="250" /></figure>
+    <figure><img src="DigiLocker\Help2.png" height="400" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/></figure>
     7.
     <figure>
-      <img src="DigiLocker\dropdownbox.png" height="400" width="250" />
+      <img src="DigiLocker\dropdownbox.png" height="400" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
     </figure>
     8.
     <figure>
-      <img src="DigiLocker\homepage_1.png" height="450" width="250" />
+      <img src="DigiLocker\homepage_1.png" height="450" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
     </figure>
     11.
     <figure>
-      <img src="DigiLocker\Navigation.png" height="350" width="250" />
+      <img src="DigiLocker\Navigation.png" height="350" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
     </figure>
     12.
     <figure>
-      <img src="DigiLocker\profile_details.png" height="275" width="250" />
+      <img src="DigiLocker\profile_details.png" height="275" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
     </figure>
     13.
-    <figure><img src="DigiLocker\Help.png" height="350" width="250" /></figure>-->
+    <figure><img src="DigiLocker\Help.png" height="350" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/></figure>-->
   </body>
 </html>
