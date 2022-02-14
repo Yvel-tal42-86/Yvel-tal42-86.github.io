@@ -11,7 +11,7 @@
     <meta http-equiv="author" content="Rahul Murali" />
     <meta http-equiv="pragma" content="no-cache" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <!--<script src="main.js"></script>-->
     <title>DigiLocker</title>
     <script>
@@ -26,29 +26,29 @@
           "Date : " + date + "  Time :" + time;
       }, 1000);
     </script>
+    <script>
+      // JS file
+      window.onload = function () {
+        lax.init();
+
+        // Add a driver that we use to control our animations
+        lax.addDriver("scrollY", function () {
+          return window.scrollY;
+        });
+
+        // Add animation bindings to elements
+        lax.addElements(".selector", {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              [0, "screenWidth/2", "screenWidth"],
+            ],
+          },
+        });
+      };
+    </script>
   </head>
   <body>
-    <script> // JS file
-  window.onload = function () {
-    lax.init()
-
-    // Add a driver that we use to control our animations
-    lax.addDriver('scrollY', function () {
-      return window.scrollY
-    })
-
-    // Add animation bindings to elements
-    lax.addElements('.selector', {
-      scrollY: {
-        translateX: [
-          ["elInY", "elCenterY", "elOutY"],
-          [0, 'screenWidth/2', 'screenWidth'],
-        ]
-      }
-    })
-  }
-</script>
-
     <nav id="nav">
       <img
         alt="Digilocker"
@@ -139,7 +139,12 @@
           <span class="button">Create account</span> option right below the
           <span class="button">Sign-in</span> button to do so.
           <figure>
-            <img src="DigiLocker\sign_in.png" height="150" width="300" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
+            <img
+              src="DigiLocker\sign_in.png"
+              height="150"
+              width="300"
+              class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
+            />
           </figure>
         </p>
       </div>
@@ -161,11 +166,17 @@
           <li>Aadhar Number</li>
         </ul>
         <span class="note">
-           < The Details filled should be strictly according to aadhar Details .
-           Assign a safe 6-Digit Security PIN and note it down somewhere for future convenience.
-       </span>
+          < The Details filled should be strictly according to aadhar Details .
+          Assign a safe 6-Digit Security PIN and note it down somewhere for
+          future convenience.
+        </span>
         <figure>
-          <img src="DigiLocker\account_creation.png" height="400" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
+          <img
+            src="DigiLocker\account_creation.png"
+            height="400"
+            width="250"
+            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
+          />
         </figure>
         After Submission of the form you will be further required to input a
         6-Digit long OTP sent to your Aadhar Linked Mobile Number. In case you
@@ -174,18 +185,30 @@
         <span class="button">Update mobile number</span> option to change the
         currently displayed number to updated number.
         <figure>
-          <img src="DigiLocker\otp_entry.png" height="275" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
+          <img
+            src="DigiLocker\otp_entry.png"
+            height="275"
+            width="250"
+            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
+          />
         </figure>
         <p>
           After OTP Verification ,the system will prompt you to input a
           DigiLocker Account Username, which will complete the registration
           process and you will be able to see the homepage , from where you can
           start didgitalising your certificates and records.
-          <span class="note">The username must be unique and minimum 8 charcters long .</span>
+          <span class="note"
+            >The username must be unique and minimum 8 charcters long .</span
+          >
         </p>
         <!--link to how to update number-->
         <figure>
-          <img src="DigiLocker\sign_in_entry.png" height="285" width="250" />
+          <img
+            src="DigiLocker\sign_in_entry.png"
+            height="285"
+            width="250"
+            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
+          />
         </figure>
       </div>
     </div>
