@@ -11,8 +11,6 @@
     <meta http-equiv="author" content="Rahul Murali" />
     <meta http-equiv="pragma" content="no-cache" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <!--<script src="main.js"></script>-->
     <title>DigiLocker</title>
     <script>
       let a;
@@ -26,27 +24,6 @@
           "Date : " + date + "  Time :" + time;
       }, 1000);
     </script>
-    <script>
-      // JS file
-      window.onload = function () {
-        lax.init();
-
-        // Add a driver that we use to control our animations
-        lax.addDriver("scrollY", function () {
-          return window.scrollY;
-        });
-
-        // Add animation bindings to elements
-        lax.addElements(".selector", {
-          scrollY: {
-            translateX: [
-              ["elInY", "elCenterY", "elOutY"],
-              [0, "screenWidth/2", "screenWidth"],
-            ],
-          },
-        });
-      };
-    </script>
   </head>
   <body>
     <nav id="nav">
@@ -58,7 +35,7 @@
       <br />
       <span id="time" style="display: inline-block"></span>
     </nav>
-    <div id="Table_of_contents" class="lax lax_preset_fadeIn:50:100 lax_preset_spin">
+    <div id="Table_of_contents">
       <h1 style="font-weight: bolder">Table of contents</h1>
       <ol type="1">
         <li class="link_cont">
@@ -127,7 +104,6 @@
               alt="Get Started to DigiLocker"
               height="450"
               width="250"
-              class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
             />
           </figure>
         </p>
@@ -143,7 +119,6 @@
               src="DigiLocker\sign_in.png"
               height="150"
               width="300"
-              class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
             />
           </figure>
         </p>
@@ -175,7 +150,6 @@
             src="DigiLocker\account_creation.png"
             height="400"
             width="250"
-            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
           />
         </figure>
         After Submission of the form you will be further required to input a
@@ -189,7 +163,6 @@
             src="DigiLocker\otp_entry.png"
             height="275"
             width="250"
-            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
           />
         </figure>
         <p>
@@ -207,7 +180,6 @@
             src="DigiLocker\sign_in_entry.png"
             height="285"
             width="250"
-            class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"
           />
         </figure>
       </div>
