@@ -1,210 +1,156 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="robots" content="nofollow" />
-    <meta http-equiv="author" content="Rahul Murali" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <title>DigiLocker</title>
-    <script>
-      let a;
-      let date;
-      let time;
-      setInterval(() => {
-        a = new Date();
-        let date = a.toLocaleDateString();
-        let time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
-        document.getElementById("time").innerHTML =
-          "Date : " + date + "  Time :" + time;
-      }, 1000);
-    </script>
-  </head>
-  <body>
-    <nav id="nav">
-      <img
-        alt="Digilocker"
-        src="https://img1.digitallocker.gov.in/assets/img/digiLocker-Medium.png"
-        height="115"
-      />
-      <br />
-      <span id="time" style="display: inline-block"></span>
-    </nav>
-    <div id="Table_of_contents">
-      <h1 style="font-weight: bolder">Table of contents</h1>
-      <ol type="1">
-        <li class="link_cont">
-          <a href="#overview">Overview</a>
-          <ul type="square">
-            <li class="link_cont">
-              <a href="#benefits_to_citizens">Benefits to citizens</a>
-            </li>
 
-            <li class="link_cont"><a href="#guide">Guide</a></li>
-            <ol type="a">
-              <li class="link_cont">
-                <a href="#android">On android</a>
-                <ol type="i">
-                  <li class="link_cont">
-                    <a href="#account_creation">How to create new account ?</a>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </ul>
-        </li>
-      </ol>
-    </div>
-    <div>
-      <h1 id="overview">Overview</h1>
-      <p>
-        DigiLocker is flagship initiative of Ministry of Electronics & IT under
-        Digital India Programme. DigiLocker aims to digitally empower the
-        citizens of India by providing access to authentic digital documents to
-        citizen's digital document wallet. The issued documents in DigiLocker
-        system are deemed to at par with original physical documents as per Rule
-        9A of the Information Technology (Preservation & Retention of
-        information by intermediaries providing digital locker facilities)
-        Rules, 2016, notified on February 8, 2017 vide G.S.R.711(E).
-      </p>
-      <h2 id="benefits_to_citizens">Benefits to citizens</h2>
-      <ul>
-        <li>Authentic Documents, legally on par with originals.</li>
-        <li>Important Documents available anywhere, anytime.</li>
-        <li>Digital documents exchange with the consent of citizens.</li>
-      </ul>
-    </div>
-    <div>
-      <h2 id="guide">Guide</h2>
-      <figure>
-        <img src="DigiLocker\get_started_easy.png" height="150" width="350" />
-      </figure>
-      <hr />
-      <div>
-        <h3 id="android">On Android</h3>
-        <li>
-          First of all Install the
-          <a
-            href="https://play.google.com/store/apps/details?id=com.digilocker.android"
-            >DigiLocker</a
-          >
-          application on your android device.
-        </li>
-        <p>
-          Open the App to see the welcome sceen, where you can click on
-          <strong>Get Started</strong> Button to Sign Up .
-          <figure>
-            <img
-              src="DigiLocker\homepage.jpg"
-              alt="Get Started to DigiLocker"
-              height="450"
-              width="250"
-            />
-          </figure>
-        </p>
-        <p>
-          which opens to the page consisting of
-          <span class="button">Sign-in</span> option to your DigiLocker account(
-          for existing user accounts ). In case you are new to DigiLocker system
-          and/or intend to create new user DigiLocker account there is a
-          <span class="button">Create account</span> option right below the
-          <span class="button">Sign-in</span> button to do so.
-          <figure>
-            <img
-              src="DigiLocker\sign_in.png"
-              height="150"
-              width="300"
-            />
-          </figure>
-        </p>
-      </div>
-      <div>
-        <h3 id="account_creation">How to create new account ?</h3>
-        <p>
-          For new DigiLocker system account creation the only prerequisites you
-          will be required to possess is an Aadhar. <br />
-          The Sign-in page looks like the figure shown below which prompts you
-          to input :
-        </p>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="robots" content="nofollow" />
+  <meta http-equiv="author" content="Rahul Murali" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <title>DigiLocker</title>
+  <script>
+    let a;
+    let date;
+    let time;
+    setInterval(() => {
+      a = new Date();
+      let date = a.toLocaleDateString();
+      let time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+      document.getElementById("time").innerHTML =
+        "Date : " + date + "  Time :" + time;
+    }, 1000);
+  </script>
+</head>
+
+<body>
+
+  <nav id="nav">
+    <img alt="Digilocker" src="https://img1.digitallocker.gov.in/assets/img/digiLocker-Medium.png" height="75" />
+    <span id="time"></span>
+  </nav>
+
+  <div id="Table_of_contents">
+    <h1 style="font-weight: bolder">Table of contents</h1>
+    <ol type="1">
+      <li class="link_cont">
+        <a href="#overview">Overview</a>
         <ul type="square">
-          <li>Your Fullname</li>
-          <li>Date of Birth</li>
-          <li>Gender</li>
-          <li>Mobile Number</li>
-          <li>6-Digit Security PIN</li>
-          <li>E-mail ID</li>
-          <li>Aadhar Number</li>
+          <li class="link_cont">
+            <a href="#benefits_to_citizens">Benefits to citizens</a>
+          </li>
+
+          <li class="link_cont"><a href="#guide">Guide</a></li>
+          <ol type="a">
+            <li class="link_cont">
+              <a href="#android">On android</a>
+              <ol type="i">
+                <li class="link_cont">
+                  <a href="#account_creation">How to create new account ?</a>
+                </li>
+              </ol>
+            </li>
+          </ol>
         </ul>
-        <span class="note">
-          < The Details filled should be strictly according to aadhar Details .
-          Assign a safe 6-Digit Security PIN and note it down somewhere for
-          future convenience.
-        </span>
-        <figure>
-          <img
-            src="DigiLocker\account_creation.png"
-            height="400"
-            width="250"
-          />
-        </figure>
-        After Submission of the form you will be further required to input a
-        6-Digit long OTP sent to your Aadhar Linked Mobile Number. In case you
-        have updated the mobile number linked with the Aadhar and the mobile
-        number currently displayed is different , you can use the
-        <span class="button">Update mobile number</span> option to change the
-        currently displayed number to updated number.
-        <figure>
-          <img
-            src="DigiLocker\otp_entry.png"
-            height="275"
-            width="250"
-          />
-        </figure>
-        <p>
-          After OTP Verification ,the system will prompt you to input a
-          DigiLocker Account Username, which will complete the registration
-          process and you will be able to see the homepage , from where you can
-          start didgitalising your certificates and records.
-          <span class="note"
-            >The username must be unique and minimum 8 charcters long .</span
-          >
-        </p>
-        <!--link to how to update number-->
-        <figure>
-          <img
-            src="DigiLocker\sign_in_entry.png"
-            height="285"
-            width="250"
-          />
-        </figure>
-      </div>
+      </li>
+    </ol>
+  </div>
+  <div>
+    <h1 id="overview">Overview</h1>
+    <p>
+      DigiLocker is flagship initiative of Ministry of Electronics & IT under
+      Digital India Programme. DigiLocker aims to digitally empower the
+      citizens of India by providing access to authentic digital documents to
+      citizen's digital document wallet. The issued documents in DigiLocker
+      system are deemed to at par with original physical documents as per Rule
+      9A of the Information Technology (Preservation & Retention of
+      information by intermediaries providing digital locker facilities)
+      Rules, 2016, notified on February 8, 2017 vide G.S.R.711(E).
+    </p>
+    <h2 id="benefits_to_citizens">Benefits to citizens</h2>
+    <ul>
+      <li>Authentic Documents, legally on par with originals.</li>
+      <li>Important Documents available anywhere, anytime.</li>
+      <li>Digital documents exchange with the consent of citizens.</li>
+    </ul>
+  </div>
+  <div>
+    <h2 id="guide">Guide</h2>
+    <figure>
+      <img src="DigiLocker\get_started_easy.png" height="150" width="350" />
+    </figure>
+    <hr />
+    <div>
+      <h3 id="android">On Android</h3>
+      <li>
+        First of all Install the
+        <a href="https://play.google.com/store/apps/details?id=com.digilocker.android">DigiLocker</a>
+        application on your android device.
+      </li>
+      <p>
+        Open the App to see the welcome sceen, where you can click on
+        <strong>Get Started</strong> Button to Sign Up .
+      <figure>
+        <img src="DigiLocker\homepage.jpg" alt="Get Started to DigiLocker" height="450" width="250" />
+      </figure>
+      </p>
+      <p>
+        which opens to the page consisting of
+        <span class="button">Sign-in</span> option to your DigiLocker account(
+        for existing user accounts ). In case you are new to DigiLocker system
+        and/or intend to create new user DigiLocker account there is a
+        <span class="button">Create account</span> option right below the
+        <span class="button">Sign-in</span> button to do so.
+      <figure>
+        <img src="DigiLocker\sign_in.png" height="150" width="300" />
+      </figure>
+      </p>
     </div>
-    <!--
-    4.
-    6.
-    <figure><img src="DigiLocker\Help2.png" height="400" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/></figure>
-    7.
-    <figure>
-      <img src="DigiLocker\dropdownbox.png" height="400" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
-    </figure>
-    8.
-    <figure>
-      <img src="DigiLocker\homepage_1.png" height="450" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
-    </figure>
-    11.
-    <figure>
-      <img src="DigiLocker\Navigation.png" height="350" width="250"class=" lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
-    </figure>
-    12.
-    <figure>
-      <img src="DigiLocker\profile_details.png" height="275" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/>
-    </figure>
-    13.
-    <figure><img src="DigiLocker\Help.png" height="350" width="250" class="lax_preset_fadeInOut:153:0 lax_preset_blurIn:540:20"/></figure>-->
-  </body>
+    <div>
+      <h3 id="account_creation">How to create new account ?</h3>
+      <p>
+        For new DigiLocker system account creation the only prerequisites you
+        will be required to possess is an Aadhar. <br />
+        The Sign-in page looks like the figure shown below which prompts you
+        to input :
+      </p>
+      <ul type="square">
+        <li>Your Fullname</li>
+        <li>Date of Birth</li>
+        <li>Gender</li>
+        <li>Mobile Number</li>
+        <li>6-Digit Security PIN</li>
+        <li>E-mail ID</li>
+        <li>Aadhar Number</li>
+      </ul>
+      <span class="note">
+        < The Details filled should be strictly according to aadhar Details . Assign a safe 6-Digit Security PIN and
+          note it down somewhere for future convenience. </span>
+          <figure>
+            <img src="DigiLocker\account_creation.png" height="400" width="250" />
+          </figure>
+          After Submission of the form you will be further required to input a
+          6-Digit long OTP sent to your Aadhar Linked Mobile Number. In case you
+          have updated the mobile number linked with the Aadhar and the mobile
+          number currently displayed is different , you can use the
+          <span class="button">Update mobile number</span> option to change the
+          currently displayed number to updated number.
+          <figure>
+            <img src="DigiLocker\otp_entry.png" height="275" width="250" />
+          </figure>
+          <p>
+            After OTP Verification ,the system will prompt you to input a
+            DigiLocker Account Username, which will complete the registration
+            process and you will be able to see the homepage , from where you can
+            start didgitalising your certificates and records.
+            <span class="note">The username must be unique and minimum 8 charcters long .</span>
+          </p>
+          <!--link to how to update number-->
+          <figure>
+            <img src="DigiLocker\sign_in_entry.png" height="285" width="250" />
+          </figure>
+    </div>
+  </div>
+</body>
+
 </html>
